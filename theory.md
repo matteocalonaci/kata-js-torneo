@@ -30,3 +30,15 @@ Utilizzo di `push()` per aggiungere l'oggetto `concorrenteObj` all'array `assegn
 
 
 
+
+# MILESTONE 2
+
+## Ragionamento
+
+Per ogni `concorrenti[i]`, calcolo la sua potenza e l'aggiungo alle sue proprietà.
+
+### Funzioni Utilizzate
+
+- **`Math.floor()`**: 
+- **`Math.random()`**: 
+

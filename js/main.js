@@ -44,4 +44,17 @@ for (let i = 0; i < concorrenti.length; i++) {
   assegnazioni.push(concorrenteObj);
 }
 
-console.log(assegnazioni);
+
+// MILESTONE 2 - Allenamento:
+
+// ogni combattente si sottoporrà ad un allenamento che incrementerà (o forse no) la sua potenza, moltiplicandola per un numero casuale tra 1 e 100.
+
+
+for (let i = 0; i < concorrenti.length; i++) {
+    let training;
+    //creo un numero casuale che corrisponderà alla potenza del concorrente.
+    training = Math.floor(Math.random() * 100) + 1;
+    //aggiungo la proprietà potenza e il suo valore a assegnazioni
+    assegnazioni[i].potenza = training
+    }
+    
