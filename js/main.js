@@ -76,6 +76,41 @@ obj_fighter = obj_fighter.map(fighter => {
 
   console.log("OGGETTO AGGIORNATO", obj_fighter);
 
+      
+// MILESTONE 3 - Qualificazione:
+// escludiamo dal torneo chi, dopo l'allenamento non è riuscito a raggiungere una potenza di almeno 2000.
+
+// filter()
+let qualified_fighters = obj_fighter.filter(fighter => {
+  if (fighter.power < 2000) {
+    console.log(`${fighter.name} non si è qualificato`);
+      return false;
+
+  } else {
+    console.log(`${fighter.name} si è qualificato`);
+      return true;
+
+  }
+});
+
+// Se i concorrenti qualificati sono dispari
+if (qualified_fighters.length % 2 !== 0) {
+  // Arma casuale per Robot
+  const armaScelta = weapons.splice(Math.floor(Math.random() * weapons.length), 1)[0];
+  
+  // Robot
+  const robot = {
+      name: "Robot",
+      weapon: armaScelta,
+      power: 4000,
+  };
+  
+  // Aggiungo Robot a qualified_fighters qualora fossero dispari
+  qualified_fighters.push(robot);
+}
+
+console.log(qualified_fighters);
+
     
 
 
