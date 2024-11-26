@@ -137,3 +137,18 @@ Viene utilizzato per estrarre una porzione di un array
 
 
 
+# MILESTONE 5
+
+## Ragionamento
+Uso il metodo `sort()` per ordinare in modo decrescente i vincitori sul podio
+
+## Metodi degli Array:
+
+### Uso di `sort`
+
+Consente di ordinare gli elementi di un array in base a un criterio specificato. 
+
+- **`sort(a,b)`** richiede due parametri:
+
+  - **a**: se a - b = crescente
+  - **b**: se b - a decrescente

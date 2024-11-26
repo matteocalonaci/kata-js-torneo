@@ -159,6 +159,13 @@ function fight(fighter1, fighter2) {
 
   console.log('Winners:', winners);
 
+// MILESTONE 5 - Premiazione:
 
+winners.sort((a,b) => {
+  return b.power - a.power;
+});
+
+podio = winners.slice(0,3)
+console.log('Podio', podio);
 
 
